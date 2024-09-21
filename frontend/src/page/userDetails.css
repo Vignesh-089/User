@@ -1,0 +1,102 @@
+.name{
+    display: flex;
+    flex-direction: row;
+}
+.email{
+    display: flex;
+    flex-direction: row;
+}
+.password{
+    display: flex;
+    flex-direction: row;
+}
+.Name-input{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.email-input{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.password-input{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+/* userDetails.css */
+
+.form {
+    background-color: #3e3e3d;
+    color: white;
+    max-width: 400px;
+    margin: 50px 500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.name, .email, .password {
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+}
+.input-name, .input-email{
+    margin-left: 50px;
+}
+.input-password{
+    margin-left: 20px;
+}
+
+input{
+    width: 250px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error-message, .success-message {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.error-message {
+    color: red;
+}
+
+.success-message {
+    color: green;
+}
