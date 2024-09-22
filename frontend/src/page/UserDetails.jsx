@@ -23,8 +23,11 @@ const UserDetails = () => {
                 body: JSON.stringify({ name, email, password }),
             }).then((res) => {
                 if (res.ok) {
-                    setTask([...task, { name, email, password }]);
+                    setTask([...task, { name, email, password }]); 
                     setMessage("Item added successfully");
+                    setName('');
+                    setEmail('');
+                    setPassword('');
                 } else {
                     setError("Unable to create task");
                 }
@@ -45,7 +48,7 @@ const UserDetails = () => {
         } else if (name === 'password') {
           setPassword(value);
         }
-      };
+    };
 
     return (
         <div>
@@ -65,8 +68,23 @@ const UserDetails = () => {
                     <Input placeholder="Enter password" name="password" className={'input-password'} onChange={handleInputChange} value={password} />
                 </div>
                 <Button content="Submit" onClick={handleSubmit} />
+                {error && <p>{error}</p>}
             </div>
-            {error && <p>{error}</p>}
+            
+            
+{/* Submitted Data */}
+            {/* <div className="Submiteddata">
+                <h1>Submitted Data</h1>
+                <>
+                    {task.map((item) => (
+                        <>
+                            <p>Name: {item.name}</p>
+                            <p>emai: {item.email}</p>
+                            <p>password: {item.password}</p>
+                        </>
+                    ))}                
+                </>
+            </div> */}
         </div>
     );
 };

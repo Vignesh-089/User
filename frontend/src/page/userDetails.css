@@ -88,13 +88,14 @@ button:hover {
     background-color: #0056b3;
 }
 
-.error-message, .success-message {
+.success-message {
     text-align: center;
     margin-top: 15px;
     font-size: 14px;
 }
 
 .error-message {
+    text-align: center;
     color: red;
 }
 
