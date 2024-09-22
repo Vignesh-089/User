@@ -1,28 +1,32 @@
-.name{
+.name {
     display: flex;
     flex-direction: row;
 }
-.email{
+
+.email {
     display: flex;
     flex-direction: row;
 }
-.password{
+
+.password {
     display: flex;
     flex-direction: row;
 }
-.Name-input{
+
+.Name-input {
     margin-top: 20px;
     margin-left: 30px;
 }
-.email-input{
+
+.email-input {
     margin-top: 20px;
     margin-left: 30px;
 }
-.password-input{
+
+.password-input {
     margin-top: 20px;
     margin-left: 30px;
 }
-/* userDetails.css */
 
 .form {
     background-color: #3e3e3d;
@@ -48,14 +52,16 @@ p {
     font-size: 16px;
     font-family: 'Arial', sans-serif;
 }
-.input-name, .input-email{
+
+.input-name, .input-email {
     margin-left: 50px;
 }
-.input-password{
+
+.input-password {
     margin-left: 20px;
 }
 
-input{
+input {
     width: 250px;
     padding: 10px;
     margin-top: 5px;
@@ -63,11 +69,6 @@ input{
     border-radius: 5px;
     font-size: 14px;
     font-family: 'Arial', sans-serif;
-}
-
-input[type="text"]:focus, input[type="password"]:focus {
-    border-color: #007BFF;
-    outline: none;
 }
 
 button {
